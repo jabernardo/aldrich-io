@@ -1,10 +1,6 @@
 import React, { Component } from "react";
 
 class Widget extends Component {
-  constructor() {
-    super();
-  }
-
   render() {
     return (
       <form

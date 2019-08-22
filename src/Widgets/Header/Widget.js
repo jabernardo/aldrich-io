@@ -1,28 +1,20 @@
 import React, { Component } from "react";
 
+import * as Skeleton from "../../Components/Skeleton";
+
 import "./Style.scss";
 
 class Widget extends Component {
-  constructor() {
-    super();
-  }
-
   render() {
     return (
-      <div className="container">
+      <Skeleton.Box>
         <section className="header">
           <h1>{this.props.title || "John Aldrich Bernardo"}</h1>
         </section>
-      </div>
+      </Skeleton.Box>
     );
   }
 }
 
-class Header extends Widget {
-  constructor() {
-    super();
-  }
-}
-
-export { Widget, Header };
+export { Widget };
 export default Widget;

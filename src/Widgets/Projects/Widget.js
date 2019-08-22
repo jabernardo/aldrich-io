@@ -10,10 +10,6 @@ import { Widget as ConsolePHP } from "../Console-PHP/Widget";
 import "./Style.scss";
 
 class Widget extends Component {
-  constructor() {
-    super();
-  }
-
   render() {
     return (
       <Skeleton.Box overrideClass className="projects">
@@ -41,11 +37,5 @@ class Widget extends Component {
   }
 }
 
-class Projects extends Widget {
-  constructor() {
-    super();
-  }
-}
-
-export { Widget, Projects };
+export { Widget };
 export default Widget;

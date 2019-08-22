@@ -1,15 +1,17 @@
 import React, { Component } from "react";
 import Typed from "typed.js";
 
+import * as Skeleton from "../../Components/Skeleton";
+
 import "./Style.scss";
 
 class Widget extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
 
     this.state = {
       projectName: "calf",
-      projectDescription: "The quick brown fox jumps over the lazy dog.",
+      projectDescription: "Yet another Micro-framework for PHP",
       projectLink: "https://github.com/jabernardo/calf",
       projectVersion: "master",
       projectDownload: "https://github.com/jabernardo/calf/archive/master.zip"
@@ -23,7 +25,7 @@ class Widget extends Component {
         "/releases/latest"
     )
       .then(res => {
-        if (res.status != 200) {
+        if (res.status !== 200) {
           return false;
         }
 
@@ -31,7 +33,7 @@ class Widget extends Component {
       })
       .then(
         result => {
-          if (typeof result.tag_name != "undefined") {
+          if (typeof result.tag_name !== "undefined") {
             this.setState({
               projectVersion: result.tag_name,
               projectDownload: result.zipball_url
@@ -71,18 +73,18 @@ class Widget extends Component {
 
   render() {
     return (
-      <div className="container">
+      <Skeleton.Box>
         <div className="typed" id={this.state.projectName}>
           {this.state.projectName}
         </div>
         <p>{this.state.projectDescription}</p>
-        <a className="button" target="_blank" href={this.state.projectLink}>
+        <Skeleton.Button isLink target="_blank" href={this.state.projectLink}>
           View
-        </a>
-        <a className="button button-primary" href={this.state.projectDownload}>
+        </Skeleton.Button>
+        <Skeleton.Button isLink isPrimary href={this.state.projectDownload}>
           Download
-        </a>
-      </div>
+        </Skeleton.Button>
+      </Skeleton.Box>
     );
   }
 }

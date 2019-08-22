@@ -2,10 +2,6 @@ import React, { Component } from "react";
 
 // Skeleton Container
 class Box extends Component {
-  constructor() {
-    super();
-  }
-
   render() {
     var {
       className,
@@ -43,10 +39,6 @@ class Box extends Component {
 
 // Button
 class Button extends Component {
-  constructor() {
-    super();
-  }
-
   render() {
     var { className, children, isPrimary, isLink, type, ...props } = this.props;
 

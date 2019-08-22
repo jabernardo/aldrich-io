@@ -9,8 +9,9 @@ import "./Styles/skeleton.css";
 import "./Styles/global.scss";
 
 class App extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
+
     this.state = {
       name: "John Aldrich Bernardo"
     };

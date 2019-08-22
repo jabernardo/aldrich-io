@@ -5,8 +5,10 @@ import { Widget as Donate } from "../Donate/Widget";
 import "./Style.scss";
 
 class Widget extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
+
+    Donate.displayName = "Donate";
   }
 
   render() {

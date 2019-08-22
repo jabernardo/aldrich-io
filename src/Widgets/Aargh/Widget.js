@@ -6,12 +6,12 @@ import * as Skeleton from "../../Components/Skeleton";
 import "./Style.scss";
 
 class Widget extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
 
     this.state = {
       projectName: "aargh",
-      projectDescription: "The quick brown fox jumps over the lazy dog.",
+      projectDescription: "Aargh! Command-line Application Base Template",
       projectLink: "https://github.com/jabernardo/aargh",
       projectVersion: "master",
       projectDownload: "https://github.com/jabernardo/aargh/archive/master.zip"
@@ -25,7 +25,7 @@ class Widget extends Component {
         "/releases/latest"
     )
       .then(res => {
-        if (res.status != 200) {
+        if (res.status !== 200) {
           return false;
         }
 
@@ -33,7 +33,7 @@ class Widget extends Component {
       })
       .then(
         result => {
-          if (typeof result.tag_name != "undefined") {
+          if (typeof result.tag_name !== "undefined") {
             this.setState({
               projectVersion: result.tag_name,
               projectDownload: result.zipball_url
