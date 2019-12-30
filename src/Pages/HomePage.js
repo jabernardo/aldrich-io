@@ -7,8 +7,6 @@ import { Widget as Header } from "../Widgets/Header/Widget";
 import { Widget as Projects } from "../Widgets/Projects/Widget";
 import { Widget as Contact } from "../Widgets/Contact/Widget";
 
-import "../Styles/gradient.scss";
-
 class HomePage extends Component {
   constructor(props) {
     super(props);
@@ -24,7 +22,7 @@ class HomePage extends Component {
         <Helmet>
           <title>John Aldrich Bernardo</title>
         </Helmet>
-        <Header />
+        <Header className="header" />
         <Projects />
         <Contact />
       </Skeleton.Box>

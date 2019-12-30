@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 
 import { Widget as Donate } from "../Donate/Widget";
+import * as Skeleton from "../../Components/Skeleton";
 
 import "./Style.scss";
 
@@ -13,7 +14,7 @@ class Widget extends Component {
 
   render() {
     return (
-      <div className="container contact-me">
+      <Skeleton.Box className="container contact-me">
         <h2>Contact Me</h2>
         <p className="center">
           Want to support or help with my projects? E-mail me at{" "}
@@ -22,7 +23,7 @@ class Widget extends Component {
         <section className="center">
           <Donate />
         </section>
-      </div>
+      </Skeleton.Box>
     );
   }
 }

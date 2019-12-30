@@ -7,9 +7,10 @@ import "./Style.scss";
 class Widget extends Component {
   render() {
     return (
-      <Skeleton.Box>
-        <section className="header">
+      <Skeleton.Box className="header">
+        <section>
           <h1>{this.props.title || "John Aldrich Bernardo"}</h1>
+          <a href="/sh">CLI</a>
         </section>
       </Skeleton.Box>
     );

@@ -1,7 +1,10 @@
 import React, { Component } from "react";
 import { render } from "react-dom";
 
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+
 import HomePage from "./Pages/HomePage";
+import Sh from "./Pages/Sh";
 
 import "./Styles/normalize.css";
 import "./Styles/skeleton.css";
@@ -18,7 +21,18 @@ class App extends Component {
   }
 
   render() {
-    return <HomePage name={this.state.name} />;
+    return (
+      <Router>
+        <Switch>
+          <Route path="/sh">
+            <Sh name={this.state.name} />
+          </Route>
+          <Route path="/">
+            <HomePage name={this.state.name} />
+          </Route>
+        </Switch>
+      </Router>
+    );
   }
 }
 
