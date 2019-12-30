@@ -60,6 +60,8 @@ Just type "help" for the list of commands
 Hey! Just e-mail me at 4ldrich@protonmail.com. Have a good day! 
 `,
 
+      home: `## Back to the future! ##`,
+
       projects(use_descriptions = false) {
         if (use_descriptions) return `## My Personal projects ##`;
         var screen = "";
