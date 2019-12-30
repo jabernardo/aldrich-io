@@ -6,10 +6,9 @@ import "jquery.terminal/css/jquery.terminal.css";
 
 import CV from "../Components/CV";
 
-const jquery = require("jquery");
-const terminal = require("jquery.terminal");
+import $ from "jquery"
+require("jquery.terminal")
 
-const $ = (window.$ = window.jQuery = terminal(this, jquery));
 
 class Sh extends Component {
   componentDidMount() {

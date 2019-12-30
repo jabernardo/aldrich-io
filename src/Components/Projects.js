@@ -1,10 +1,9 @@
-const jquery = require("jquery");
-const terminal = require("jquery.terminal");
-
-const $ = (window.$ = window.jQuery = terminal(this, jquery));
+import $ from "jquery"
 
 class Projects {
   get() {
+    
+
     if (typeof window._jabernardo_term_projects === "object") {
       return window._jabernardo_term_projects;
     }
