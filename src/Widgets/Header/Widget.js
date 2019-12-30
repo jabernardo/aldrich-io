@@ -10,7 +10,7 @@ class Widget extends Component {
       <Skeleton.Box className="header">
         <section>
           <h1>{this.props.title || "John Aldrich Bernardo"}</h1>
-          <a href="/sh">CLI</a>
+          <a href="/cv-cli">CLI</a>
         </section>
       </Skeleton.Box>
     );
