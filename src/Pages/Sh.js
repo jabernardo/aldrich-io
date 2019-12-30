@@ -40,7 +40,7 @@ class Sh extends Component {
 
           term.resume();
 
-          return msg;
+          return msg + (msg.length > 0 ? "\n" : "");
         },
         {
           autocompleteMenu: true,
