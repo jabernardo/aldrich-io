@@ -16,18 +16,18 @@ class Widget extends Component {
         <Skeleton.Box>
           <h2>Projects</h2>
           <Skeleton.Box isRow>
-            <Skeleton.Box columns="four" className="pl-php">
+            <Skeleton.Box columns="four" className="p-box pl-php">
               <Calf />
             </Skeleton.Box>
-            <Skeleton.Box columns="four" className="pl-php">
+            <Skeleton.Box columns="four" className="p-box pl-php">
               <Saddle />
             </Skeleton.Box>
-            <Skeleton.Box columns="four" className="pl-go">
+            <Skeleton.Box columns="four" className="p-box pl-go">
               <Aargh />
             </Skeleton.Box>
           </Skeleton.Box>
           <Skeleton.Box isRow>
-            <Skeleton.Box columns="four" className="pl-php">
+            <Skeleton.Box columns="four" className="p-box pl-php">
               <ConsolePHP />
             </Skeleton.Box>
           </Skeleton.Box>

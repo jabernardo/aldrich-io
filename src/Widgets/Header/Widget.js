@@ -9,8 +9,9 @@ class Widget extends Component {
     return (
       <Skeleton.Box className="header">
         <section>
+          <img className="profile" src="/assets/me-prof.png" alt={this.props.title || "John Aldrich Bernardo"} />
           <h1>{this.props.title || "John Aldrich Bernardo"}</h1>
-          <a href="/cv-cli">CLI</a>
+          <a className="cli-version" href="/cv-cli">&gt; View this page CLI version</a>
         </section>
       </Skeleton.Box>
     );

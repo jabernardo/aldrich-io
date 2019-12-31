@@ -1,6 +1,21 @@
 .header {
-  font-size: 5.0rem;
   color: #3d3d3d;
-  margin-top: 30px;
+  margin: 30px auto 30px auto !important;
+  text-align: center;
+
+  .profile {
+    height: 256px;
+    width: 256px;
+    outline: none;
+  }
+
+  .cli-version {
+    font-size: 1.5rem;
+    background: #000;
+    padding: 0.5rem 3rem;
+    color: #00ef00;
+    text-decoration: none;
+    border-radius: 3px;
+  }
 }
 
