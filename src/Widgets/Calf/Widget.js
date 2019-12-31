@@ -12,7 +12,7 @@ class Widget extends Component {
     this.state = {
       projectName: "calf",
       projectDescription: "Yet another Micro-framework for PHP",
-      projectLink: "https://github.com/jabernardo/calf",
+      projectLink: "https://jabernardo.github.io/calf",
       projectVersion: "master",
       projectDownload: "https://github.com/jabernardo/calf/archive/master.zip"
     };
