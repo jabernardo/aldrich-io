@@ -33,7 +33,7 @@ class HomePage extends Component {
           <meta property="og:author" content="John Aldrich Bernardo" />
           <meta property="og:type" content="website" />
           <meta property="og:url" content="https://jabernardo.github.io" />
-          <meta property="og:description" content="Hello! My name is John Aldrich Bernardo. This is the terminal version of my CV." />
+          <meta property="og:description" content="Hello! My name is John Aldrich Bernardo. Click here to know me!" />
           <meta property="og:image" content="https://jabernardo.github.io/assets/me.jpg" />
           <meta property="og:image:secure_url" content="https://jabernardo.github.io/assets/me.jpg" />
         </Helmet>
