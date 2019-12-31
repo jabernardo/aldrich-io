@@ -78,7 +78,7 @@ class Widget extends Component {
           {this.state.projectName}
         </div>
         <p>{this.state.projectDescription}</p>
-        <Skeleton.Button isLink target="_blank" href={this.state.projectLink}>
+        <Skeleton.Button isLink href={this.state.projectLink}>
           View
         </Skeleton.Button>
         <Skeleton.Button isLink isPrimary href={this.state.projectDownload}>
