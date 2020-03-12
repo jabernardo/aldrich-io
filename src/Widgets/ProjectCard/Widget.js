@@ -10,11 +10,12 @@ class Widget extends Component {
     super(props);
 
     this.state = {
-      projectName: "calf",
-      projectDescription: "Yet another Micro-framework for PHP",
-      projectLink: "https://jabernardo.github.io/calf",
-      projectVersion: "master",
-      projectDownload: "https://github.com/jabernardo/calf/archive/master.zip"
+      projectName: props.name || "Project",
+      projectDescription: props.description || "Project Description",
+      projectLink: props.link || "Project Link",
+      projectVersion: props.version || "master",
+      projectDownload: `${props.link}/archive/master.zip`,
+      projectLanguage: props.language || "PL"
     };
   }
 
@@ -52,12 +53,12 @@ class Widget extends Component {
   componentDidMount() {
     this.loadProject();
 
-    this.typed = new Typed("#" + this.state.projectName, {
+    this.typed = new Typed("#" + this.state.projectName.replace(/[\W]/gi, ""), {
       strings: [
         this.state.projectName,
         "@" + this.state.projectVersion,
         "written in",
-        "PHP"
+        this.state.projectLanguage
       ],
       typeSpeed: Math.random() * 10,
       backSpeed: 0,
@@ -74,11 +75,11 @@ class Widget extends Component {
   render() {
     return (
       <Skeleton.Box>
-        <div className="typed" id={this.state.projectName}>
+        <div className="typed" id={this.state.projectName.replace(/[\W]/gi, "")}>
           {this.state.projectName}
         </div>
         <p>{this.state.projectDescription}</p>
-        <Skeleton.Button isLink href={this.state.projectLink}>
+        <Skeleton.Button isLink target="_blank" href={this.state.projectLink}>
           View
         </Skeleton.Button>
         <Skeleton.Button isLink isPrimary href={this.state.projectDownload}>

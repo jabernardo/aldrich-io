@@ -1,0 +1,59 @@
+.projects {
+    div.typed,
+    .typed-cursor {
+      font-size: 3.6rem;
+      display: inline-block;
+    }
+  
+    color: #3d3d3d;
+    background: #eaeaea;
+    border-radius: 3px;
+    padding: 2rem 0;
+  
+    h2 {
+      text-align: center;
+    }
+  
+    .p-box p {
+      height: 5rem;
+      overflow: hidden;
+    }
+  
+    /* PHP */
+    
+    .pl-php {
+      background: #fff;
+      border: 1px solid #8c6dec;  
+      border-radius: 4px;
+      transition-duration: 1s;
+    }
+  
+    .pl-php:hover {
+      background: #f3efff;
+    }
+  
+    /* Go */
+  
+    .pl-go {
+      background: #fff;
+      border: 1px solid #0078cf;  
+      border-radius: 4px;
+      transition-duration: 1s;
+    }
+  
+    .pl-go:hover {
+      background: #e6f4ff;
+    }
+  
+    .columns {
+      margin: 1rem;
+      padding: .5rem;
+      transition-duration: 1s;
+    }
+  
+    .columns:hover {
+      transform: scale(1.05);
+    }
+  
+  }
+  

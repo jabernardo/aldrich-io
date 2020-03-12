@@ -39,6 +39,19 @@
     background: #e6f4ff;
   }
 
+  /* Python */
+  .pl-py {
+    background: #fff;
+    border: 1px solid #9fa400;
+    border-radius: 4px;
+    transition: 1s;
+  }
+
+  .pl-py:hover {
+    background-color: #fffec6;
+    border: 1px solid #0e6895;
+  }
+
   .columns {
     margin: 1rem;
     padding: .5rem;
