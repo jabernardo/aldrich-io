@@ -1,0 +1,25 @@
+webpackHotUpdate("static/development/pages/index.js",{
+
+/***/ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/resolve-url-loader/index.js?!./node_modules/sass-loader/dist/cjs.js?!./widgets/Projects.module.scss":
+/*!***************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ref--5-oneOf-3-1!./node_modules/postcss-loader/src??__nextjs_postcss!./node_modules/resolve-url-loader??ref--5-oneOf-3-3!./node_modules/sass-loader/dist/cjs.js??ref--5-oneOf-3-4!./widgets/Projects.module.scss ***!
+  \***************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(true);
+// Module
+exports.push([module.i, ".Projects_projects__3CQf4 {\n  color: #3d3d3d;\n  background: #eaeaea;\n  border-radius: 3px;\n  padding: 2rem;\n  margin-bottom: 20px; }\n  .Projects_projects__3CQf4 h2 {\n    text-align: center; }\n  .Projects_projects__3CQf4 .Projects_pl-py__1aqIn {\n    background: #fff;\n    border: 1px solid #9fa400;\n    border-radius: 4px;\n    transition: 1s;\n    height: 250px;\n    overflow: hidden;\n    margin: 4px; }\n  .Projects_projects__3CQf4 .Projects_pl-py__1aqIn:hover {\n    color: #084d8a;\n    background-color: #fffec6;\n    border: 1px solid #0e6895; }\n  .Projects_projects__3CQf4 .Projects_pl-php__39etp {\n    background: #fff;\n    border: 1px solid #8c6dec;\n    border-radius: 4px;\n    transition-duration: 1s;\n    height: 250px;\n    overflow: hidden;\n    margin: 4px; }\n  .Projects_projects__3CQf4 .Projects_pl-php__39etp:hover {\n    background: #f3efff; }\n  .Projects_projects__3CQf4 .Projects_pl-go__3Hd1H {\n    background: #fff;\n    border: 1px solid #0078cf;\n    border-radius: 4px;\n    transition-duration: 1s;\n    height: 250px;\n    overflow: hidden;\n    margin: 4px; }\n  .Projects_projects__3CQf4 .Projects_pl-go__3Hd1H:hover {\n    background: #e6f4ff; }\n  .Projects_projects__3CQf4 .Projects_columns__3Rwyw {\n    margin: 1rem;\n    padding: .5rem;\n    transition-duration: 1s; }\n  .Projects_projects__3CQf4 .Projects_columns__3Rwyw:hover {\n    transform: scale(1.05); }\n", "",{"version":3,"sources":["Projects.module.scss"],"names":[],"mappings":"AAAA;EACE,cAAc;EACd,mBAAmB;EACnB,kBAAkB;EAClB,aAAa;EACb,mBAAmB,EAAA;EALrB;IAQI,kBAAkB,EAAA;EARtB;IAYI,gBAAgB;IAChB,yBAAyB;IACzB,kBAAkB;IAClB,cAAc;IACd,aAAa;IACb,gBAAgB;IAChB,WAAW,EAAA;EAlBf;IAsBI,cAAc;IACd,yBAAyB;IACzB,yBAAyB,EAAA;EAxB7B;IA4BI,gBAAgB;IAChB,yBAAyB;IACzB,kBAAkB;IAClB,uBAAuB;IACvB,aAAa;IACb,gBAAgB;IAChB,WAAW,EAAA;EAlCf;IAsCI,mBAAmB,EAAA;EAtCvB;IA0CI,gBAAgB;IAChB,yBAAyB;IACzB,kBAAkB;IAClB,uBAAuB;IACvB,aAAa;IACb,gBAAgB;IAChB,WAAW,EAAA;EAhDf;IAoDI,mBAAmB,EAAA;EApDvB;IAwDI,YAAY;IACZ,cAAc;IACd,uBAAuB,EAAA;EA1D3B;IA8DI,sBAAsB,EAAA","file":"Projects.module.scss","sourcesContent":[".projects {\n  color: #3d3d3d;\n  background: #eaeaea;\n  border-radius: 3px;\n  padding: 2rem;\n  margin-bottom: 20px;\n\n  h2 {\n    text-align: center;\n  }\n\n  .pl-py {\n    background: #fff;\n    border: 1px solid #9fa400;\n    border-radius: 4px;\n    transition: 1s;\n    height: 250px;\n    overflow: hidden;\n    margin: 4px;\n  }\n\n  .pl-py:hover {\n    color: #084d8a;\n    background-color: #fffec6;\n    border: 1px solid #0e6895;\n  }\n  \n  .pl-php {\n    background: #fff;\n    border: 1px solid #8c6dec;  \n    border-radius: 4px;\n    transition-duration: 1s;\n    height: 250px;\n    overflow: hidden;\n    margin: 4px;\n  }\n\n  .pl-php:hover {\n    background: #f3efff;\n  }\n\n  .pl-go {\n    background: #fff;\n    border: 1px solid #0078cf;  \n    border-radius: 4px;\n    transition-duration: 1s;\n    height: 250px;\n    overflow: hidden;\n    margin: 4px;\n  }\n\n  .pl-go:hover {\n    background: #e6f4ff;\n  }\n\n  .columns {\n    margin: 1rem;\n    padding: .5rem;\n    transition-duration: 1s;\n  }\n\n  .columns:hover {\n    transform: scale(1.05);\n  }\n\n}\n"]}]);
+// Exports
+exports.locals = {
+	"projects": "Projects_projects__3CQf4",
+	"pl-py": "Projects_pl-py__1aqIn",
+	"pl-php": "Projects_pl-php__39etp",
+	"pl-go": "Projects_pl-go__3Hd1H",
+	"columns": "Projects_columns__3Rwyw"
+};
+
+/***/ })
+
+})
+//# sourceMappingURL=index.js.abd14da1d7a7efe104bf.hot-update.js.map
