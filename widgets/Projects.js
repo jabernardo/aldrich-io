@@ -27,7 +27,7 @@ class Projects extends Component {
                 name="rute"
                 description="A Simple Router for Deno "
                 link="https://github.com/jabernardo/rute"
-                language="TS"
+                language="TypeScript"
                 version="0.x"
               />
             </Skeleton.Box>
