@@ -22,13 +22,13 @@ class Projects extends Component {
                 version="master"
               />
             </Skeleton.Box>
-            <Skeleton.Box columns="four" className={ styles["pl-php"] }>
+            <Skeleton.Box columns="four" className={ styles["pl-ts"] }>
               <ProjectCard
-                name="saddle"
-                description="A Simple Dependency Injection"
-                link="https://github.com/jabernardo/saddle"
-                language="PHP"
-                version="master"
+                name="rute"
+                description="A Simple Router for Deno "
+                link="https://github.com/jabernardo/rute"
+                language="TS"
+                version="0.x"
               />
             </Skeleton.Box>
             <Skeleton.Box columns="four" className={ styles["pl-go"] }>
@@ -66,6 +66,17 @@ class Projects extends Component {
                 description="Shorthand ?! Press The F!"
                 link="https://github.com/jabernardo/thef"
                 language="Python"
+                version="master"
+              />
+            </Skeleton.Box>
+          </Skeleton.Box>
+          <Skeleton.Box isRow>
+            <Skeleton.Box columns="four" className={ styles["pl-php"] }>
+              <ProjectCard
+                name="saddle"
+                description="A Simple Dependency Injection"
+                link="https://github.com/jabernardo/saddle"
+                language="PHP"
                 version="master"
               />
             </Skeleton.Box>

@@ -2,13 +2,19 @@ div.typed,
 .typed-cursor {
   font-size: 3.6rem;
   display: inline-block;
+  height: 5rem;
+  min-height: 5rem;
 }
 
 .go_relative {
   position: relative;
-  padding: 4px;
+  padding: 5px;
   height: 100%;
   font-size: 2rem;
+}
+
+.go_relative p {
+  padding: 1.2rem;
 }
 
 .go_bottom {

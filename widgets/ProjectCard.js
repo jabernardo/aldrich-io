@@ -14,7 +14,7 @@ class ProjectCard extends Component {
       projectDescription: props.description || "Project Description",
       projectLink: props.link || "Project Link",
       projectVersion: props.version || "master",
-      projectDownload: `${props.link}/archive/master.zip`,
+      projectDownload: `${props.link}/archive/${props.version || "master"}.zip`,
       projectLanguage: props.language || "PL"
     };
   }
@@ -60,7 +60,7 @@ class ProjectCard extends Component {
         "written in",
         this.state.projectLanguage
       ],
-      typeSpeed: Math.random() * 10,
+      typeSpeed: (Math.random() * 10) + 100,
       backSpeed: 0,
       fadeOut: true,
       loop: true,
