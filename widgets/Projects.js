@@ -5,82 +5,57 @@ import * as Skeleton from "../components/Skeleton";
 import ProjectCard  from "./ProjectCard";
 
 import styles from "./Projects.module.scss";
+import { map } from "jquery";
 
 class Projects extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      projects: []
+    };
+  }
+
+  loadDb() {
+    fetch("/database.json")
+      .then(res => {
+        if (res.status !== 200) {
+          return false;
+        }
+
+        return res.json();
+      })
+      .then(
+        result => {
+          this.setState({ projects: result });
+        },
+        error => {
+          console.log("[github-api] no releases");
+        }
+      );
+  }
+
+  componentDidMount() {
+    this.loadDb();
+  }
+
   render() {
     return (
       <Skeleton.Box overrideClass className={styles.projects}>
         <Skeleton.Box>
           <h2>Projects</h2>
-          <Skeleton.Box isRow>
-            <Skeleton.Box columns="four" className={ styles["pl-php"] }>
+          { this.state.projects.map(data => {
+            // return JSON.stringify(data);
+            return (
               <ProjectCard
-                name="calf"
-                description="Yet another Micro-framework for PHP"
-                link="https://jabernardo.github.io/calf"
-                language="PHP"
-                version="master"
+                name={data.project}
+                description={data.desc}
+                link={ data.link || `https://github.com/${data.user}/${data.project}` }
+                language={data.lang}
+                version={data.version}
               />
-            </Skeleton.Box>
-            <Skeleton.Box columns="four" className={ styles["pl-ts"] }>
-              <ProjectCard
-                name="rute"
-                description="A Simple Router for Deno "
-                link="https://github.com/jabernardo/rute"
-                language="TypeScript"
-                version="0.x"
-              />
-            </Skeleton.Box>
-            <Skeleton.Box columns="four" className={ styles["pl-go"] }>
-              <ProjectCard
-                name="aargh"
-                description="Aargh! Command-line Application Base Template"
-                link="https://github.com/jabernardo/aargh"
-                language="Go"
-                version="master"
-              />
-            </Skeleton.Box>
-          </Skeleton.Box>
-          <Skeleton.Box isRow>
-            <Skeleton.Box columns="four" className={ styles["pl-php"] }>
-              <ProjectCard
-                name="console.php"
-                description="Command-line Application Skeleton for PHP"
-                link="https://github.com/jabernardo/console.php"
-                language="PHP"
-                version="master"
-              />
-            </Skeleton.Box>
-            <Skeleton.Box columns="four" className={ styles["pl-py"] }>
-              <ProjectCard
-                name="WTF!"
-                description="Yet another cURL but using JSON files."
-                link="https://github.com/jabernardo/wtf"
-                language="Python"
-                version="master"
-              />
-            </Skeleton.Box>
-            <Skeleton.Box columns="four" className={ styles["pl-py"] }>
-              <ProjectCard
-                name="TheF!"
-                description="Shorthand ?! Press The F!"
-                link="https://github.com/jabernardo/thef"
-                language="Python"
-                version="master"
-              />
-            </Skeleton.Box>
-          </Skeleton.Box>
-          <Skeleton.Box isRow>
-            <Skeleton.Box columns="four" className={ styles["pl-php"] }>
-              <ProjectCard
-                name="saddle"
-                description="A Simple Dependency Injection"
-                link="https://github.com/jabernardo/saddle"
-                language="PHP"
-                version="master"
-              />
-            </Skeleton.Box>
-          </Skeleton.Box>
+            )
+          }) }
         </Skeleton.Box>
       </Skeleton.Box>
     );

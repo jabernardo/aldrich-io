@@ -8,8 +8,16 @@ div.typed,
 .go_relative {
   position: relative;
   padding: 5px;
-  height: 100%;
   font-size: 2rem;
+  background: #fff;
+  border: 1px solid #3d3d3d;
+  border-radius: 4px;
+  transition: 1s;
+  height: 250px;
+  width: 30%;
+  overflow: hidden;
+  margin: 4px;
+  display: inline-block;
 }
 
 .go_relative p {
@@ -17,8 +25,13 @@ div.typed,
 }
 
 .go_bottom {
-  width: 100%;
+  width: 90%;
   position: absolute;
   padding: 4px;
   bottom: 12px;
+
+  a {
+    width: 46%;
+    padding: 0;
+  }
 }
