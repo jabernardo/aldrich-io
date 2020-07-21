@@ -3,7 +3,7 @@ import React, { Component } from "react";
 import Donate from "./Donate";
 import * as Skeleton from "../components/Skeleton";
 
-import "./Contact.module.scss";
+import styles from "./Contact.module.scss";
 
 class Contact extends Component {
   constructor(props) {
@@ -14,11 +14,12 @@ class Contact extends Component {
 
   render() {
     return (
-      <Skeleton.Box className="container contact-me">
+      <Skeleton.Box className={styles.contactMe}>
         <h2>Contact Me</h2>
         <p className="center">
-          Want to support or help with my projects? E-mail me at{" "}
+          {" Want to support or help with my projects? E-mail me at "}
           <a href="mailto: 4ldrich@protonmail.com">4ldrich@protonmail.com</a>
+          {". Or, buy me a coffee instead."}
         </p>
         <section className="center">
           <Donate />

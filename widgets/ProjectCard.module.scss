@@ -3,6 +3,12 @@ div.typed,
   display: inline;
   font-size: 3.6rem;
   min-height: 5rem;
+  color: #006efd;
+}
+
+.buttonPrimary {
+  background-color: #006efd !important;
+  border-color: #006efd !important;
 }
 
 .go_relative {
@@ -11,12 +17,17 @@ div.typed,
   font-size: 2rem;
   background: #fff;
   border: 1px solid #3d3d3d;
+  box-shadow: 0 3px 5px #aeaeae;
   border-radius: 4px;
   height: 250px;
   width: 30%;
   overflow: hidden;
-  margin: 4px;
+  margin: 8px;
   display: inline-block;
+
+  a {
+    box-shadow: 0 1px 3px #aeaeae;
+  }
 
   @media (max-width: 800px) {
     width: 46%;

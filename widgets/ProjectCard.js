@@ -83,7 +83,7 @@ class ProjectCard extends Component {
           <Skeleton.Button isLink target="_blank" href={this.state.projectLink}>
             View
           </Skeleton.Button>
-          <Skeleton.Button isLink isPrimary href={this.state.projectDownload}>
+          <Skeleton.Button className={ "button button-primary " + styles.buttonPrimary } isLink href={this.state.projectDownload}>
             Download
           </Skeleton.Button>
         </div>

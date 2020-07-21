@@ -1,5 +1,5 @@
 .header {
-  color: #3d3d3d;
+  color: #ff0;
   margin: 30px auto 30px auto !important;
   text-align: center;
 
@@ -7,15 +7,24 @@
     height: 256px;
     width: 256px;
     outline: none;
+    border: solid 8px #ffffff;
+    border-radius: 50%;
   }
 
   .cli-version {
-    font-size: 1.5rem;
-    background: #000;
+    font-size: 2rem;
+    background: #ffffff;
     padding: 0.5rem 3rem;
-    color: #00ef00;
+    color: #006efd;
     text-decoration: none;
     border-radius: 3px;
+    text-shadow: none;
+
+    &:hover {
+      background: #000;
+      color: #00ef00;
+      box-shadow: 0px 5px 0px #00ef00;
+    }
   }
 }
 
