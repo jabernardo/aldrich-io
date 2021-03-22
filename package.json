@@ -19,6 +19,7 @@
   "author": "John Aldrich Bernardo",
   "license": "MIT",
   "dependencies": {
+    "cloudinary-react": "^1.7.0",
     "gh-pages": "2.1.1",
     "jquery": "3.4.1",
     "jquery.terminal": "2.11.1",
